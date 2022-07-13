@@ -1,0 +1,119 @@
+@keyframes float1 {
+  from {
+    transform: rotate(0deg) translateX(12px) rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg) translateX(12px) rotate(360deg);
+  }
+}
+
+@keyframes float2 {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.home {
+  width: 100%;
+  #Hero {
+    background-color: var(--color2);
+    .hero-wrapper {
+      min-height: 100vh;
+      flex-wrap: wrap-reverse;
+      .left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .title {
+          h1:nth-child(1) {
+            font-size: 64px;
+            font-weight: 400;
+            color: var(--text1);
+            line-height: 108px;
+          }
+          h1:nth-child(2) {
+            font-size: 64px;
+            font-weight: 800;
+            color: var(--text1);
+            line-height: 108px;
+          }
+        }
+        .separator {
+          height: 4px;
+          width: 240px;
+          background-color: var(--accent2);
+          margin-bottom: 32px;
+        }
+        .description {
+          font-size: 16px;
+          font-weight: 500;
+          color: var(--text1);
+          max-width: 405px;
+          line-height: 24px;
+        }
+        .social-media {
+          margin-top: 36px;
+          a {
+            margin-right: 8px;
+            img {
+              border-radius: 50%;
+              height: 36px;
+              width: 36px;
+              transition: all 200ms;
+              &:hover {
+                transform: scale(1.2);
+                box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.25);
+              }
+            }
+          }
+        }
+      }
+      .right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .illustration {
+          width: 512px;
+          height: 512px;
+          background: radial-gradient(
+            circle,
+            var(--accent3) 0%,
+            var(--accent1) 60%
+          );
+          border-radius: 50%;
+          position: relative;
+          img:nth-child(1) {
+            display: inline;
+            position: absolute;
+            width: 425px;
+            height: 560px;
+            top: 40px;
+            left: 172px;
+            animation: float1 6s linear infinite;
+          }
+          img:nth-child(2) {
+            display: inline;
+            position: absolute;
+            width: 188px;
+            height: 130px;
+            top: 52px;
+            left: 52px;
+            animation: float2 6s ease-in-out infinite;
+          }
+        }
+      }
+    }
+  }
+  #temp {
+    height: 000px;
+  }
+}

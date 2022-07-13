@@ -1,0 +1,49 @@
+.covid-tracker-web {
+  #ProjectDetail {
+    background-color: var(--color2);
+    .detail-container {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 80px;
+      padding-bottom: 160px;
+      div {
+        .title {
+          font-size: 40px;
+          font-weight: 700;
+          line-height: 60px;
+          color: var(--text1);
+          text-align: center;
+          margin-top: 120px;
+          margin-bottom: 64px;
+        }
+        .description {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          color: var(--text1);
+          text-align: justify;
+        }
+        .img-wrapper {
+          // display: flex;
+          // flex-wrap: wrap;
+          // align-items: flex-start;
+          // gap: 20px;
+          -webkit-column-count: 2;
+          -webkit-column-gap: 20px;
+          -moz-column-count: 2;
+          -moz-column-gap: 20px;
+          column-count: 2;
+          column-gap: 20px;
+          row-gap: 20px;
+          img {
+            // width: calc(50% - 20px);
+            // object-fit: contain;
+            margin-bottom: 20px;
+            width: 100% !important;
+            height: auto !important;
+          }
+        }
+      }
+    }
+  }
+}
