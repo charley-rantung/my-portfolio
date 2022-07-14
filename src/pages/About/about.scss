@@ -89,32 +89,28 @@
           .button-wrapper {
             display: flex;
             gap: 20px;
-            button {
-              width: 120px;
-              height: 40px;
-              font-size: 1rem;
-              font-weight: 500;
-              line-height: 24px;
-              border-radius: 8px;
-              transition: all 200ms;
-              margin-top: 30px;
-              &:nth-child(1) {
-                background-color: #fff;
-                border: none;
-                a {
-                  display: inline-block;
-                  padding: 8px 28px;
-                  color: var(--color1);
-                  text-decoration: none;
+            a {
+              button {
+                width: 120px;
+                height: 40px;
+                font-size: 1rem;
+                font-weight: 500;
+                line-height: 24px;
+                border-radius: 8px;
+                transition: all 200ms;
+                margin-top: 30px;
+                &#Hire {
+                  background-color: var(--text1);
+                  border: none;
                 }
-              }
-              &:nth-child(2) {
-                background-color: transparent;
-                border: 1px solid var(--text1);
-                color: var(--text1);
-              }
-              &:hover {
-                transform: translateY(-2px);
+                &#Download {
+                  background-color: transparent;
+                  border: 1px solid var(--text1);
+                  color: var(--text1);
+                }
+                &:hover {
+                  transform: translateY(-2px);
+                }
               }
             }
           }

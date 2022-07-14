@@ -50,10 +50,16 @@ const About = () => {
                   </a>
                 </p>
                 <div className="button-wrapper">
-                  <button type="button">
-                    <Link to={"/hire"}>Hire Me</Link>
-                  </button>
-                  <button type="button">Download CV</button>
+                  <Link to={"/hire"}>
+                    <button id="Hire" type="button">
+                      Hire Me
+                    </button>
+                  </Link>
+                  <a href="https://drive.google.com/uc?export=download&id=1_NBCkcUr3lv4lSuMeOSW_NMedjzW4YQk">
+                    <button id="Download" type="button">
+                      Download CV
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
