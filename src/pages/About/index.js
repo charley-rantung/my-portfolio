@@ -110,8 +110,10 @@ const About = () => {
               </CardBody>
               <CardBody>
                 <CardSubtitle>Website</CardSubtitle>
-                <CardTitle>vercel.com</CardTitle>
-                <CardLink href="">visit</CardLink>
+                <CardTitle>https://charley-rantung.vercel.app</CardTitle>
+                <CardLink href="https://charley-rantung.vercel.app">
+                  visit
+                </CardLink>
               </CardBody>
               <CardBody>
                 <CardSubtitle>Dribble</CardSubtitle>
